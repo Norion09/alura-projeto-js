@@ -1,0 +1,9 @@
+.leia-mais
+{
+    font-size: 1em;/*20px*/
+    padding: 0.35em;/*7px*/
+    margin: 0.4em;/*8px*/
+    background-color: #E6E7E8;
+    display: block;
+    text-align: center;
+}

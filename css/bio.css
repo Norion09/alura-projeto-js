@@ -1,0 +1,165 @@
+html{
+    font-size: 120%;
+}
+body{
+    font-family: "Crimson Text", serif;
+    background-color: #F2FFFC;
+}
+main h1{
+    font-size: 300%;
+    background-color: #851944;
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 1.25rem;/*rem = tamanho da fonte, 1.25*rem //rem pega como base a altura da fonte *//* espaço interno*/
+    margin: 0;
+    border-bottom: .5rem solid black;/*borda preta*/
+    text-transform: uppercase;
+    box-sizing: border-box;/*pega o tamanho do box inteiro incluindo (padding, margin e border) na hora de dimensionar o widht*/
+    text-shadow: 5px 5px #000; /*coloca sombras*/
+    /*color: rgba(255, 127, 127, 0.8);*/
+}
+h1{
+    text-shadow: 5px 5px #000;
+    /*color: rgba(255, 127, 127, 0.8);*/
+}
+main div{
+    width: 37rem;/*720px*/
+    margin: auto;
+    padding-bottom: 4em;/*80px*/
+    padding-top: 1.5em;/*30px*/
+}
+h2{
+    font-size: 30px;
+    font-family: "Open Sans Condensed", sans-serif;
+    clear: both;   /*não permite que nenhum float fique na posição marcada*/
+}
+body{
+    line-height: 1.1;/*espaçamento entre linhas*/
+}
+.container > p::first-letter {
+    font-size: 140%;
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
+}
+p{
+    text-align: justify;
+    margin-top: 1em;/*20px*/
+    margin-bottom: 1em;/*20px*/
+}
+strong{ font-weight: bold; }
+em{ font-style: italic }
+/*---------------------------------------------------------------*/
+blockquote{
+	background-color: #D9E5E3;
+    padding: 1rem;/* espaço interno*/ /*tamanho baseado no tamanho da fonte, 20px da fonte e 20 px de padding tamanho = 1*/
+    border: 0.5em solid #C2CCCA;/*coloca borda ao redor do elemento block quote*//*em = pega o tamanho da fonte do navegador*/
+    width: 30ch;/*ch = largura do caracter da fonte*/
+    margin: 1em 2em;/*original margin: 20px 40px;*//*em = pega o tamanho da fonte do navegador*/
+    box-sizing: border-box;/*pega o tamanho do box inteiro incluindo (padding, margin e border) na hora de dimensionar o widht*/
+    float:  right; /*tirar um elemento do fluxo e permiti que ele "flutue" ao redor do conteudo*/
+    font-size: 
+}/*em = pega o tamanho da fonte do navegador*//*ch = largura do caracter da fonte*//*rem pega a altura da fonte*/
+blockquote:nth-of-type(odd)/*pega os elementos impar do blockquote*/
+{
+    float:  right; /*tirar um elemento do fluxo e permiti que ele "flutue" ao redor do conteudo*/
+    margin-right: 0;
+}
+blockquote:nth-of-type(even)/*pega os elementos pare de blockquote*/
+{
+    float: left;/*tirar um elemento do fluxo e permiti que ele "flutue" ao redor do conteudo*/
+    margin-right: 2em;
+    margin-left: 0;
+}
+blockquote:before {
+    content: '"';
+    font-family: cursive;
+    font-size: 10em;
+    position: absolute;
+    color: #bbb;
+    line-height: 0.7;
+}/*coloca " aspas " no blockquote*/
+.citacao > p {
+    position: relative;
+}/*coloca o texto afrente das aspas*/
+.citacao:nth-of-type(odd):hover,.citacao:nth-of-type(odd):focus {
+    transform: scale(1.2) rotate(5deg);
+}
+.citacao:nth-of-type(even):hover,.citacao:nth-of-type(even):focus {
+    transform: scale(1.2) rotate(-5deg);
+}
+.citacao:hover,.citacao:focus{
+     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+/*-----------------------------------------------------------------*/
+aside h1{
+    font-size: 150%;/*30px*/
+    margin-bottom: 1.25em;/*25px*/
+}
+.icones-sociais  li{
+    display: inline-block;/*block = empilhar => stacklayout // line = deixa os itens em uma linha*/
+    position: relative;
+}/*.nome-class pega a tag somente da class emq eu está*//*#icones-sociais li //#nome-id pega o tag somente da id solecionada*/
+.icones-sociais a{
+    height: 2em;/*40px*/
+    width: 2em;/*40px*/
+    display: inline-block;
+    text-indent: -9999px;/*deslocamento do texto // nesse caso moveu ele pra direita até sumir*/
+    /*color: transparent;*/
+    /*font-size: 0px;*/
+    margin-top: 0.5em;
+}
+.github {background-image: url(..img/github.png);}/*image replacement*/
+.linkedin {background-image: url(..img/linkedin.png);}/*image replacement*/
+.twitter {background-image: url(..img/twitter.png);}/*image replacement*/
+.icones-sociais a:hover::after, .icones-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    padding: 0.2em;
+    font-size: .75em;
+    border-radius: 5px;
+}
+.icones-sociais a:hover::before, .icones-sociais a:focus::before {
+    content: '';
+    position: **absolute**;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+    width: 1em;
+    height: 1em;
+    background-color: #000;
+}
+.social-radape{
+    margin: 3em;/*60px*/
+}
+.tags{
+    padding-bottom: 1.25em;/*25px*/
+    margin-bottom: 0.75em;/*15px*/
+    border-bottom: 0.05em solid #CCC;/*1px*/
+}
+nav a {
+	color: #F2FFFC;
+    text-transform: lowercase;
+}
+/*---------------------------------------------------------------*/
+main a{
+    color: #851944;
+}
+main a:hover,main a:focus{
+    color: red;
+}/*link aparece com cor vermelha quando o mouse é posto em cima*/
+aside a {
+    color: inherit; /*herda o valor do elemento pai*/
+    font-family: "Open Sans Condensed";
+    text-decoration: none;
+} /*barra lateral*/
+background-color: #F2FFFC;
+/*rgb(120,30,60);*/

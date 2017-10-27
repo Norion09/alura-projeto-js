@@ -1,0 +1,175 @@
+body
+{
+    font-family: "Crimson Text", serif;
+    background-color: #F2FFFC;
+    font-size: 120%;
+}
+main h1
+{
+    font-size: 60px;
+    background-color: #851944;
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 25px;/* espaço interno*/
+    margin: 0;
+    border-bottom: 10px solid black;/*borda preta*/
+    padding-bottom: 15px;/* espaço interno*/
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+main div
+{
+    width: 840px;
+    margin: auto;
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+h2
+{
+    font-size: 30px;
+    font-family: "Open Sans Condensed", sans-serif;
+    clear: both;   /*não permite que nenhum float fique na posição marcada*/
+}
+body
+{
+    line-height: 1.1;/*espaçamento entre linhas*/
+}
+p
+{
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+strong{ font-weight: bold; }
+em{ font-style: italic }
+/*---------------------------------------------------------------*/
+blockquote
+{
+	background-color: #D9E5E3;
+    padding: 20px;/* espaço interno*/
+    border: 10px solid #C2CCCA;/*coloca borda ao redor do elemento block quote*/
+    width: 250px;
+    margin: 20px;/*original margin: 20px 40px;*/
+    box-sizing: border-box;/*pega o tamanho do box inteiro incluindo (padding e border) na hora de dimensionar o widht*/
+    float:  right; /*tirar um elemento do fluxo e permiti que ele "flutue" ao redor do conteudo*/
+}
+
+.citacao1
+{
+    float:  right; /*tirar um elemento do fluxo e permiti que ele "flutue" ao redor do conteudo*/
+    margin-right: 0;
+}
+.citacao2
+{
+    float:  left; /*tirar um elemento do fluxo e permiti que ele "flutue" ao redor do conteudo*/
+    margin-left: 0;
+}
+
+aside, img
+{
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    float: right;
+    box-sizing: border-box; /*pega o tamanho do box inteiro incluindo (padding e border) na hora de dimensionar o widht*/
+}
+
+.minha-foto
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navegacao-site/*aside*/
+{
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+    padding: 20px;/* espaço interno*/
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    width: 15%;
+    position: relative; /*absolute, sai do fluxo, relativo a janela*//*relativo, ele não sia do fl*/
+    top: 310px;
+    /*clear: right; /* não é mais nescessaria*/
+}
+main
+{
+    float: left;
+    width: 85%;
+}
+
+aside h1
+{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.icones-sociais  li/*.nome-class pega a tag somente da class emq eu está*//*#icones-sociais li //#nome-id pega o tag somente da id solecionada*/
+{
+    display: inline-block;/*block = empilhar => stacklayout // line = deixa os itens em uma linha*/
+}
+
+.icones-sociais a
+{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    text-indent: -9999px;/*deslocamento do texto// nessa caso moveu ele pra direita até sumir*/
+    /*color: transparent;*/
+    /*font-size: 0px;*/
+}
+.github {background-image: url(github.png);}/*image replacement*/
+.linkedin {background-image: url(linkedin.png);}/*image replacement*/
+.twitter {background-image: url(twitter.png);}/*image replacement*/
+
+.social-radape /*teste*/
+{
+    margin: 60px;
+}
+
+#rodape-pagina/*footer*/
+{
+	background-color: #000;
+	color: #F2FFFC;
+    padding: 10px;/* espaço interno*/
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+.tags
+{
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #CCC;
+}
+
+nav a 
+{
+	color: #F2FFFC;
+    text-transform: lowercase;
+}
+.leia-mais
+{
+    font-size: 20px;
+    padding: 7px;
+    margin: 8px;
+    background-color: #E6E7E8;
+    display: block;
+    text-align: center;
+}
+/*---------------------------------------------------------------*/
+main a
+{
+    color: #851944;
+}
+aside a /*barra lateral*/
+{
+    color: inherit; /*herda o valor do elemento pai*/
+    font-family: "Open Sans Condensed";
+    text-decoration: none;
+} 
+background-color: #F2FFFC;
+/*rgb(120,30,60);*/

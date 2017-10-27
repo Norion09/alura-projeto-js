@@ -1,0 +1,33 @@
+aside, img
+{
+    border-bottom: 0.5em solid black;/*10px*/
+    border-left: 0.5em solid black;/*10px*/
+    float: right;
+    box-sizing: border-box; /*pega o tamanho do box inteiro incluindo (padding, margin e border) na hora de dimensionar o widht*/
+}
+
+.minha-foto
+{
+    position: fixed; /*absolute, sai do fluxo, relativo a janela*//*relativo, ele não sai do fluxo*/
+    right: 0px;
+    /*margin-top: 0.2em;*/
+}
+
+.navegacao-site/*aside*/
+{
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+    padding: 1em;/* espaço interno*//*20px*/
+    border-bottom: 0.5em solid black;/*10px*/
+    border-left: 0.5em solid black;/*10px*/
+    width: 15%;
+    position: fixed; /*absolute, sai do fluxo, relativo a janela*//*relativo, ele não sai do fluxo*/
+    top: 16.1em;/*310px*/
+    right: 0;
+    /*clear: right; /* não é mais nescessaria*/
+}
+main
+{
+    float: left;
+    width: 85%;
+}
