@@ -226,7 +226,7 @@ html{
 .blog a:hover + .incio-post, .blog a:focus + .incio-post{
     display: block;
 }
-.blog a:hover, .blog a:focus {
+.link-blog a:hover, .link-blog a:focus {
     background-color: #FFF;
     padding: 0.3em;
     padding-right: 15em;
@@ -357,6 +357,7 @@ div {
         scale(1.2);
 }
 */
+
 /*
 border-radius: rx rx rx rx / ry ry ry ry;
 
@@ -366,6 +367,7 @@ border-radius: rx rx rx rx / ry ry ry ry;
 -o-border-radius: 10px;
 border-radius: 10px;
 */
+
 /*
 tag{}
 #id{}
@@ -374,14 +376,15 @@ ancestra decendente{}
 irmão ~ irmão{}
 irmão + irmão seguinte{}
 pai > filho{}
-
 */
+
 /*
 estruturais: first-child, last-child, nth-child(xn+x), nth-of-type
 dinâmicas: hover focus active checked
 :hover
 :focus
 */
+
 /*
 p::first-letter {
     font-size: 3em;

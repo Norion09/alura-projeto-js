@@ -4,6 +4,7 @@ aside, img
     border-left: 0.5em solid black;/*10px*/
     float: right;
     box-sizing: border-box; /*pega o tamanho do box inteiro incluindo (padding, margin e border) na hora de dimensionar o widht*/
+    
 }
 
 .minha-foto
